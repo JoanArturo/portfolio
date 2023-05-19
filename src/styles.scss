@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'colors';
+
+$white: colors.$white;
+$body-bg: colors.$coalmine;
+
+$custom-colors: (
+    "coalmine":        colors.$coalmine,
+    "midnight-purple": colors.$midnight-purple,
+    "dull-purple":     colors.$dull-purple
+);
+
+$theme-colors: (
+    "primary": colors.$primary,
+    "dark":    colors.$dark,
+    "light":   colors.$light,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "fonts";
+@import "../node_modules/bootstrap/scss/bootstrap";
