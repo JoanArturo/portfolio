@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md bg-midnight-purple navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">Portfolio</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="showMenuOnMobile = true">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [class.active]="isActive('home')" href="#home" (click)="onClickLink($event)" [attr.data-bs-toggle]="showMenuOnMobile ? 'collapse' : ''" data-bs-target="#navbarNav">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="isActive('aboutme')" href="#aboutme" (click)="onClickLink($event)" [attr.data-bs-toggle]="showMenuOnMobile ? 'collapse' : ''" data-bs-target="#navbarNav">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="isActive('skills')" href="#skills" (click)="onClickLink($event)" [attr.data-bs-toggle]="showMenuOnMobile ? 'collapse' : ''" data-bs-target="#navbarNav">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="isActive('projects')" href="#projects" (click)="onClickLink($event)" [attr.data-bs-toggle]="showMenuOnMobile ? 'collapse' : ''" data-bs-target="#navbarNav">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="isActive('contact')" href="#contact" (click)="onClickLink($event)" [attr.data-bs-toggle]="showMenuOnMobile ? 'collapse' : ''" data-bs-target="#navbarNav">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-primary navbar-toggler-close d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="showMenuOnMobile = false">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414z" fill="#0D0D0D"/></svg>
+            <span>Cerrar</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
