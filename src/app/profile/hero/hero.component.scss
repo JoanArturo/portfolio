@@ -1,0 +1,53 @@
+// Fix overflow bug added by AOS library
+section {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.hero {
+    padding: 32px 0;
+    min-height: 520px;
+
+    img {
+        position: relative;
+        animation: floatingImage 5s infinite linear;
+    }
+
+    h1 {
+        font-family: 'Poppins-Bold';
+        line-height: 3rem;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 16px;
+    }
+
+    .buttons .btn {
+        padding: 16px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+}
+
+@keyframes floatingImage {
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+    
+    75% {
+        transform: translateY(10px);
+    }
+}

@@ -18,5 +18,7 @@ $theme-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+$btn-border-radius: 4px;
+
 @import "fonts";
 @import "../node_modules/bootstrap/scss/bootstrap";
