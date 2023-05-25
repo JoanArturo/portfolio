@@ -22,3 +22,9 @@ $btn-border-radius: 4px;
 
 @import "fonts";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Fix overflow bug added by AOS library
+html, body {
+    overflow-x: hidden;
+}

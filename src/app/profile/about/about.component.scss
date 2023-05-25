@@ -1,0 +1,49 @@
+@use "colors";
+
+section {
+    padding: {
+        top: 96px;
+        bottom: 96px;
+    }
+
+    .section-title {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 40px;
+        font-family: 'Poppins-Bold';
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 48px;
+            background-color: colors.$primary;
+        }
+    }
+
+    .hobby {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 8px;
+        min-height: 128px;
+        background-color: colors.$midnight-purple;
+        border-radius: 4px;
+
+        small {
+            width: 100%;
+            text-align: center;
+        }
+
+        &:hover {
+            background-color: colors.$coalmine;
+            box-shadow: 0 0 12px rgba(255, 0, 200, 0.5);
+        }
+    }
+}
