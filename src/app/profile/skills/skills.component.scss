@@ -1,0 +1,44 @@
+@use "colors";
+
+section {
+    padding: {
+        top: 96px;
+        bottom: 96px;
+    }
+
+    .section-title {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 40px;
+        font-family: 'Poppins-Bold';
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 48px;
+            background-color: colors.$primary;
+        }
+    }
+
+    .section-description {
+        margin-bottom: 32px;
+    }
+
+    .card-skill {
+        display: grid;
+        place-content: center;
+        min-height: 120px;
+        background-color: colors.$midnight-purple;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: colors.$dark;
+            box-shadow: 0 0 12px rgba(255, 0, 200, 0.5);
+        }
+    }
+}

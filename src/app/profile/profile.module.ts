@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -10,7 +11,8 @@ import { AboutComponent } from './about/about.component';
   declarations: [
     HeaderComponent,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule
@@ -19,6 +21,7 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     HeroComponent,
     AboutComponent,
+    SkillsComponent,
   ],
 })
 export class ProfileModule { }
