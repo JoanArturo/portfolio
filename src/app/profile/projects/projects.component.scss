@@ -1,0 +1,107 @@
+@use "colors";
+
+section {
+    padding: {
+        top: 96px;
+        bottom: 96px;
+    }
+
+    .section-title {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 40px;
+        font-family: 'Poppins-Bold';
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 48px;
+            background-color: colors.$primary;
+        }
+    }
+
+    .section-description {
+        margin-bottom: 32px;
+    }
+
+    .card {
+        height: 400px;
+        overflow: hidden;
+
+        &::after {
+            position: absolute;
+            inset: 0;
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(0deg, #1f032994, #efb1ff00);
+        }
+
+        .card-img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-img-overlay {
+            z-index: 99;
+            
+            .card-text {
+                position: absolute;
+                left: 24px;
+                bottom: 24px;
+                width: calc(100% - 48px);
+            }
+        }
+
+        .card-details-panel {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: 999;
+            padding: 24px;
+            width: 100%;
+            height: 100%;
+            background-color: colors.$light;
+            transition: 300ms;
+
+            .project-title-text {
+                font-family: 'Poppins-Bold';
+                color: colors.$midnight-purple;
+            }
+
+            .group-text-title {
+                font-family: 'Poppins-Bold';
+                color: colors.$dull-purple;
+            }
+
+            .group-text-description {
+                color: colors.$midnight-purple;
+            }
+
+            .btn-visit-repository {
+                position: absolute;
+                left: 24px;
+                bottom: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                width: calc(100% - 48px);
+            }
+        }
+
+        &:hover > .card-details-panel{
+            top: 0;
+        }
+    }
+
+    .btn {
+        padding: 16px 24px;
+    }
+}
