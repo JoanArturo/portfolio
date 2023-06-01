@@ -1,0 +1,18 @@
+@use "colors";
+
+footer {
+    padding: {
+        top: 36px;
+        bottom: 36px;
+    }
+
+    .socialmedia-link {
+        &:hover svg > path {
+            fill: colors.$dull-purple;
+        }
+
+        &:active svg > path {
+            fill: colors.$primary;
+        }
+    }
+}
