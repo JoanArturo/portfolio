@@ -5,6 +5,7 @@ import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -14,7 +15,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HeroComponent,
     AboutComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule
@@ -25,6 +27,7 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
+    ContactComponent,
   ],
 })
 export class ProfileModule { }

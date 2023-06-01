@@ -3,6 +3,13 @@
 
 $white: colors.$white;
 $body-bg: colors.$coalmine;
+$input-bg: colors.$midnight-purple;
+
+$input-color: colors.$white;
+$input-border-color: colors.$dull-purple;
+$input-placeholder-color: colors.$dull-purple;
+$input-focus-border-color: colors.$primary;
+$input-focus-box-shadow: 0 0 12px rgba(255, 0, 200, 0.5);
 
 $custom-colors: (
     "coalmine":        colors.$coalmine,
@@ -20,6 +27,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $btn-border-radius: 4px;
 $card-border-radius: 4px;
+$input-border-radius: 4px;
+$input-border-width: 2px;
+
+$input-padding-y: 12px;
+$input-padding-x: 12px;
 
 @import "fonts";
 @import "../node_modules/bootstrap/scss/bootstrap";

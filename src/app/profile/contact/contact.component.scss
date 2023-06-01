@@ -1,0 +1,70 @@
+@use "colors";
+
+section {
+    overflow: hidden;
+
+    padding: {
+        top: 96px;
+        bottom: 96px;
+    }
+
+    .section-title {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 40px;
+        font-family: 'Poppins-Bold';
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 48px;
+            background-color: colors.$primary;
+        }
+    }
+
+    .section-description {
+        margin-bottom: 32px;
+    }
+
+    .section-description > a {
+        font-family: 'Poppins-Bold';
+        color: colors.$white;
+        text-decoration: underline;
+
+        &:hover {
+            color: colors.$dull-purple;
+        }
+
+        &:active {
+            color: colors.$primary;
+        }
+    }
+
+    form {
+        position: relative;
+        z-index: 9;
+
+        textarea {
+            resize: none;
+        }
+
+        .form-group {
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            padding: 16px 24px;
+        }
+    }
+
+    .illustration {
+        position: absolute;
+        right: 0;
+        bottom: -98px;
+    }
+}
