@@ -41,3 +41,8 @@ $input-padding-x: 12px;
 html, body {
     overflow-x: hidden;
 }
+
+// Enable scroll smoothing
+html {
+    scroll-behavior: smooth;
+}
