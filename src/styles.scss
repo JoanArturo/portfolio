@@ -46,3 +46,8 @@ html, body {
 html {
     scroll-behavior: smooth;
 }
+
+// Add the "custom-toast" class to modify the styles of the toastr library
+.toast-container .custom-toast.ngx-toastr {
+    box-shadow: 0 0 12px #9999996b;
+}
